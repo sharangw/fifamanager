@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIFA Manager</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="../static/design.css" rel="stylesheet">
+</head>
+<body class="bg">
+
+<div style="color:#b9fff8" class="fluid-container" align="center">
+    <h2>Welcome!</h2>
+
+    <h4> Please search for a player you wish to replace: </h4>
+
+    <br>
+
+    {# [START form] #}
+
+    {% block content %}
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <div>
+            <input type="text" id="player" name="player" placeholder="Enter player...">
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    {# [END form] #} {% endblock %}
+
+    <div>
+        <a class="link" href = "replace/1">{{player1}}</a>
+        <a class="link" href = "replace/2">{{player2}}</a>
+        <a class="link" href = "replace/3">{{player3}}</a>
+        <a class="link" href = "replace/4">{{player4}}</a>
+        <a class="link" href = "replace/5">{{player5}}</a>
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>

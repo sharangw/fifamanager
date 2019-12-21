@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIFA Manager</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="../static/design.css" rel="stylesheet">
+</head>
+<body class="bg">
+
+<div class="fluid-container" align="center">
+
+    <h2 style="color:#b9fff8">Here are the top 5 replacements for: {{player}}</h2>
+    <br>
+    <table border=1 style="color:white" class="playerTable">
+        <thead>
+        <tr>
+            <th class="red">Player Out</th>
+            <th class="green">Player In</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="red">{{player}}</td>
+                <td class="green">{{player1}}</td>
+            </tr>
+            <tr>
+                <td class="red">{{player}}</td>
+                <td class="green">{{player2}}</td>
+            </tr>
+            <tr>
+                <td class="red">{{player}}</td>
+                <td class="green">{{player3}}</td>
+            </tr>
+            <tr>
+                <td class="red">{{player}}</td>
+                <td class="green">{{player4}}</td>
+            </tr>
+            <tr>
+                <td class="red">{{player}}</td>
+                <td class="green">{{player5}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    {# [START form] #}
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <button type="submit" class="btn btn-warning">
+            Back
+        </button>
+
+    </form>
+
+    {# [END form] #}
+</div>
+
+
+</body>
+</html>

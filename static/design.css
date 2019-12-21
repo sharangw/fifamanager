@@ -1,0 +1,23 @@
+body, html {
+  height: 100%;
+  background-image: url('pitch2.jpeg');
+  background-repeat: -x;
+  /*background-size: 1000 px 766 px;*/
+}
+
+.link {
+    color:#b9fff8;
+    font-size:x-large
+}
+
+.playerTable {
+    border=1
+}
+
+.red {
+    background-color:red
+}
+
+.green {
+    background-color:green
+}
